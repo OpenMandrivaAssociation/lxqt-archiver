@@ -10,6 +10,7 @@ Source0:	https://github.com/lxqt/lxqt-archiver/archive/%{version}/%{name}-%{vers
 BuildRequires: cmake
 BuildRequires: cmake(lxqt-build-tools)
 BuildRequires: ninja
+BuildRequires: qmake5
 BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(libfm-qt)
 BuildRequires: pkgconfig(Qt5Core)
