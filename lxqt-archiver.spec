@@ -58,8 +58,7 @@ like tar and zip. The supported file types are:
     lzop, rzip, xz.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %cmake_qt5 -G Ninja
 
