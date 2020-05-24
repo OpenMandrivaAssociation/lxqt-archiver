@@ -60,7 +60,7 @@ like tar and zip. The supported file types are:
 %prep
 %autosetup -p1
 
-%cmake_qt5 -G Ninja
+%cmake -G Ninja
 
 %build
 %ninja -C build
