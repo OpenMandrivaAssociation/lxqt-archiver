@@ -18,6 +18,7 @@ BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Help)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5X11Extras)
+BuildRequires: cmake(Qt5LinguistTools)
 
 %description
 This is only a front-end (a graphical interface) to archiving programs
