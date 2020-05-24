@@ -6,6 +6,7 @@ License:	GPLv2
 Group:		Graphical desktop/Other
 Url:		https://github.com/lxqt/lxqt-archiver
 Source0:	https://github.com/lxqt/lxqt-archiver/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0: lxqt-archiver-0.0.96-format-not-literal.patch
 
 BuildRequires: cmake
 BuildRequires: cmake(lxqt-build-tools)
