@@ -1,0 +1,12 @@
+diff -ur lxqt-archiver-0.0.96/src/core/fr-archive.c lxqt-archiver-0.0.96_patched/src/core/fr-archive.c
+--- lxqt-archiver-0.0.96/src/core/fr-archive.c	2018-07-05 21:33:32.000000000 +0300
++++ lxqt-archiver-0.0.96_patched/src/core/fr-archive.c	2018-12-01 14:50:51.312673297 +0300
+@@ -1243,7 +1243,7 @@
+ 	if (! g_file_query_exists (archive->file, archive->priv->cancellable)) {
+ 		GError *error;
+ 
+-        error = g_error_new (G_IO_ERROR, G_IO_ERROR_NOT_FOUND, _("Archive not found"));
++        error = g_error_new_literal (G_IO_ERROR, G_IO_ERROR_NOT_FOUND, _("Archive not found"));
+ 		fr_archive_copy_done (archive, FR_ACTION_LOADING_ARCHIVE, error);
+ 		g_error_free (error);
+ 
