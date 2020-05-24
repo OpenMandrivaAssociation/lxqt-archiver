@@ -12,6 +12,7 @@ BuildRequires: cmake(lxqt-build-tools)
 BuildRequires: ninja
 BuildRequires: qmake5
 BuildRequires: pkgconfig(json-glib-1.0)
+BuildRequires: pkgconfig(libfm)
 BuildRequires: pkgconfig(libfm-qt)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5DBus)
