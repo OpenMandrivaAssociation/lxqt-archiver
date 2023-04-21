@@ -1,7 +1,7 @@
 Summary:  Simple and lightweight desktop-agnostic Qt file archiver for LXQT desktop.
 Name: lxqt-archiver
-Version: 0.7.0
-Release: 4
+Version: 0.8.0
+Release: 1
 License: GPLv2
 Group: Graphical desktop/Other
 Url: https://github.com/lxqt/lxqt-archiver
