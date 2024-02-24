@@ -1,6 +1,6 @@
 Summary:  Simple and lightweight desktop-agnostic Qt file archiver for LXQT desktop.
 Name: lxqt-archiver
-Version: 0.9.0
+Version: 0.9.1
 Release: 1
 License: GPLv2
 Group: Graphical desktop/Other
@@ -11,6 +11,7 @@ BuildRequires: cmake
 BuildRequires: cmake(lxqt-build-tools)
 BuildRequires: ninja
 BuildRequires: qmake5
+BuildRequires: 7zip
 BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(libfm)
 BuildRequires: pkgconfig(libfm-qt)
@@ -21,6 +22,7 @@ BuildRequires: pkgconfig(Qt5Help)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5X11Extras)
 BuildRequires: cmake(Qt5LinguistTools)
+Requires: 7zip
 
 %description
 This is only a front-end (a graphical interface) to archiving programs
@@ -62,7 +64,9 @@ like tar and zip. The supported file types are:
 
 %prep
 %autosetup -p1
-%cmake -G Ninja
+%cmake \
+       -DUSE_7Z=ON \
+       -G Ninja
 
 %build
 %ninja -C build
