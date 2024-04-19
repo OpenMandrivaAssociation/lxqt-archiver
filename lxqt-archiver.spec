@@ -1,6 +1,6 @@
 Summary:  Simple and lightweight desktop-agnostic Qt file archiver for LXQT desktop.
 Name: lxqt-archiver
-Version: 0.9.1
+Version: 1.0.0
 Release: 1
 License: GPLv2
 Group: Graphical desktop/Other
@@ -8,20 +8,18 @@ Url: https://github.com/lxqt/lxqt-archiver
 Source0: https://github.com/lxqt/lxqt-archiver/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: cmake
-BuildRequires: cmake(lxqt-build-tools)
+BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: ninja
-BuildRequires: qmake5
 BuildRequires: 7zip
 BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(libfm)
-BuildRequires: pkgconfig(libfm-qt)
-BuildRequires: pkgconfig(Qt5Core)
-BuildRequires: pkgconfig(Qt5DBus)
-BuildRequires: pkgconfig(Qt5Gui)
-BuildRequires: pkgconfig(Qt5Help)
-BuildRequires: pkgconfig(Qt5Widgets)
-BuildRequires: pkgconfig(Qt5X11Extras)
-BuildRequires: cmake(Qt5LinguistTools)
+BuildRequires: pkgconfig(libfm-qt6)
+BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6DBus)
+BuildRequires: cmake(Qt6Gui)
+BuildRequires: cmake(Qt6Help)
+BuildRequires: cmake(Qt6Widgets)
+BuildRequires: cmake(Qt6LinguistTools)
 Requires: 7zip
 
 %description
