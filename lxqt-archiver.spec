@@ -62,11 +62,10 @@ like tar and zip. The supported file types are:
 
 %prep
 %autosetup -p1
+%build
 %cmake \
        -DUSE_7Z=ON \
        -G Ninja
-
-%build
 %ninja -C build
 
 %install
