@@ -66,7 +66,7 @@ like tar and zip. The supported file types are:
 %cmake \
        -DUSE_7Z=ON \
        -G Ninja
-%ninja -C build
+%ninja_build
 
 %install
 %ninja_install -C build
