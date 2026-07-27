@@ -1,11 +1,11 @@
 Summary:  Simple and lightweight desktop-agnostic Qt file archiver for LXQT desktop.
 Name: lxqt-archiver
-Version: 1.3.0
+Version: 1.4.0
 Release: 1
 License: GPLv2
 Group: Graphical desktop/Other
 Url: https://github.com/lxqt/lxqt-archiver
-Source0: https://github.com/lxqt/lxqt-archiver/archive/%{version}/%{name}-%{version}.tar.gz
+Source0: https://github.com/lxqt/lxqt-archiver/releases/download/%{version}/lxqt-archiver-%{version}.tar.xz
 
 BuildRequires: cmake
 BuildRequires: cmake(lxqt2-build-tools)
